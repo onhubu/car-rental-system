@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<fieldset style="background-color:#deb8e3">
+     <img src="{% static 'car1.png' %}" style="height:50px; width:50px;"/>
+    WELCOME TO THE CAR RENTALS  :-)
+</fieldset>
+<center>
+    <fieldset style="background-color:lightblue;ssssscd ">
+<form method = "POST" action="{% url 'login' %}">{% csrf_token %}
+    username
+    <input type="text" name="username"><br/>
+     password
+    <input type="password" name="password"><br/>
+
+         <a href="http://127.0.0.1:8000/prashant/">
+            <input style="background-color:#3d85c6; color:white;border-radius:8px; height:30px;width:60px;
+            border:0px solid; box-shadow:2px 4px #5b5b5b;"
+                   type="submit" value="login"></a>
+</form>
+
+
+            <input style="background-color:#3d85c6; color:white;border-radius:8px; height:30px;width:60px;
+            border:0px solid; box-shadow:2px 4px #5b5b5b; "
+                type="submit" value="forgot">
+
+</fieldset>
+</center>
+<fieldset>
+    <center>
+        <img src="{% static 'car7.png' %}" style="height:400px; width:1000px;"/>
+    </center>
+</fieldset>
+
+
+</body>
+</html>

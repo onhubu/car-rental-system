@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<fieldset style="background-color:#96e436">
+     <img src="{% static 'car1.png' %}" style="height:50px; width:50px;"/>
+    please enter your details
+</fieldset>
+<fieldset style="background-color:grey; color:white">
+    <center>
+   <form method = "POST" action="{% url 'signup' %}">
+       {% csrf_token %}
+       username
+    <input type="text" name="username"><br/>
+    email
+    <input type="email" name="email"><br/>
+    password
+    <input type="password" name="password"><br/>
+    phone number
+    <input type="number" name="number"><br/>
+        gender___
+    <input type="radio" name="gender">male
+        <input type="radio" name="gender">female <br/>
+     <input type="submit" value="signup" >
+
+   </form>
+    </center>
+</fieldset>
+<fieldset>
+    <center>
+        <img src="{% static 'car5.png' %}" style="height:400px; width:900px;"/>
+    </center>
+</fieldset>
+
+
+</body>
+</html>
